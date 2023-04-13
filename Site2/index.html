@@ -3,114 +3,7 @@
 
 <head>
   <title>Card estilo Pokemon</title>
-  <style>
-    body{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /* Estilos para o card */
-    .card {
-      width: 400px;
-      height: 550px;
-      background-color: #FFF;
-      background-image: url('pokemon-background.jpg');
-      background-size: cover;
-      border-radius: 10px;
-      overflow: hidden;
-      position: relative;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    }
-
-    /* Estilos para a imagem de fundo do Pokemon */
-    .card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-size: cover;
-      opacity: 0.3;
-      z-index: -1;
-    }
-
-    /* Estilos para a imagem do Pokemon */
-    .card img {
-      width: 150px;
-      height: auto;
-      margin-bottom: 15px;
-      padding-top: 30px;
-      max-height: 250px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    /* Estilos para o nome do Pokemon */
-    .card .name {
-      font-size: 20px;
-      font-weight: bold;
-      text-align: center;
-      margin-top: -12px;
-      margin-bottom: 2px;
-      color: #000;
-    }
-
-    /* Estilos para a bio do Pokemon */
-    .card .bio {
-      font-size: 13px;
-      text-align: justify;
-      margin-bottom: 10px;
-      margin-left: 15px;
-      margin-right: 15px;
-      color: #000;
-    }
-
-    /* Estilos para a habilidade especial do Pokemon */
-    .card .ability {
-      font-size: 10px;
-      font-weight: bold;
-      color: #000;
-      margin-top: 5px;
-    }
-
-    /* Estilos para a fraqueza do Pokemon */
-    .card .weakness {
-      font-size: 10px;
-      font-weight: bold;
-      color: #000;
-    }
-     /* Estilos para os índices do Pokemon */
-     .card .indices {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 7px;
-      margin-left: 3px;
-    }
-
-    /* Estilos para o rótulo dos índices */
-    .card .indices .label {
-      font-size: 12px;
-      font-weight: bold;
-      margin-left: 10px;
-      margin-right: 35px;
-      color: #000;
-    }
-
-    /* Estilos para os valores dos índices */
-    .card .indices .value {
-      font-size: 10px;
-      margin-right: 50px;
-      color: #000;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -128,9 +21,9 @@
         <div class="label">Engenharia de software:</div>
       </div>
     <div class="indices">
-        <div class="value">⭐⭐⭐⭐⭐</div>
-        <div class="value">⭐⭐⭐⭐⭐</div>
-        <div class="value">⭐⭐⭐</div>
+        <div class="value">🔴🔴🔴🔴🔴</div>
+        <div class="value">🟡🟡🟡🟡🟡</div>
+        <div class="value">🟢🟢🟢⚪⚪</div>
     </div>
     <br><br><div class="ability">
       Habilidade Especial: Desenvolver back-end sob pressão
@@ -141,5 +34,4 @@
     
   </div>
 </body>
-
 </html>

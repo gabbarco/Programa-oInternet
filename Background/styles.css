@@ -1,0 +1,6 @@
+body {
+    background-color: blue;
+    background-image: url('sasuke.jpg');
+    background-position: center center;
+    background-size: cover;
+}

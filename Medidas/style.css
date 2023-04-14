@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-size: 20px;
+}
+#tela {
+    border: 2px solid tomato;
+    width: 100vw;
+    height: 50vh;
+    background-color: bisque;
+}
+
+#tela img{
+    width: 80%;
+}
+
+#paragrafos {
+    font-size: 2em;
+}
+#dobro {
+    font-size: 2em;
+}
+#triplo{
+    font-size: 3em;
+}
+
+#box {
+    display: inline-block;
+    background-color: pink;
+    color: white;
+    padding: 1em;
+}

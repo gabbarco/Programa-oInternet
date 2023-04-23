@@ -1,0 +1,60 @@
+.body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas:
+      "header header"
+      "container related-videos";
+}
+
+  .header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .container {
+    grid-area: container;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "video"
+    "comments";
+  }
+  .video {
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+  
+  
+  .comments {
+    display: grid;
+    gap: 20px;
+  }
+  
+  
+  .comment {
+    padding: 20px;
+  }
+  
+  .comment-author {
+    font-size: 20px;
+  }
+
+.related-video {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+    gap: 20px;
+}
+  
+.related-video {
+    padding: 10px;
+}

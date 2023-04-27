@@ -13,8 +13,6 @@
   }
 
   .header img{
-    margin-top: 1em;
-    margin-left: 120em;
     border-radius: 50px;
   }
   
@@ -29,12 +27,13 @@
   .posts {
     grid-area: posts;
     display: grid;
-    justify-self: center;
-    align-self: center;
+    justify-self: left;
+    align-self: left;
+    margin-left: 10em;
     grid-gap: 20px;
   }
   .post p{
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .post img {
@@ -51,8 +50,8 @@
   }
 
   .sidebartexts{
-    font-size: 3em;
-    margin-left: 0.5em;
+    font-size: 2.5em;
+    margin-left: 1em;
     margin-bottom: 2em;
     color: white;
     justify-self: center;
@@ -60,7 +59,7 @@
   }
 
   .sidebartexts2{
-    font-size: 2em;
+    font-size: 1.5em;
     margin-left: 2em;
     color: white;
     justify-self: center;

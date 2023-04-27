@@ -1,0 +1,68 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas:
+      "header"
+      "content"
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #c13584;
+  }
+
+  .header img{
+    margin-top: 1em;
+    margin-left: 120em;
+    border-radius: 50px;
+  }
+  
+  .content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      " sidebar  posts  posts "
+  }
+  .posts {
+    grid-area: posts;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    grid-gap: 20px;
+  }
+  .post p{
+    font-size: 40px;
+  }
+
+  .post img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10em;
+    border-radius: 1em;
+    border-color: #000;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: black;
+  }
+
+  .sidebartexts{
+    font-size: 3em;
+    margin-left: 0.5em;
+    margin-bottom: 2em;
+    color: white;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .sidebartexts2{
+    font-size: 2em;
+    margin-left: 2em;
+    color: white;
+    justify-self: center;
+    align-self: center;
+  }

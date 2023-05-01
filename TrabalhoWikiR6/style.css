@@ -1,0 +1,6 @@
+.Site {
+    display: flex;
+    min-height: 100%;
+    background-size: cover;
+    background-color: blue;
+}

@@ -7,32 +7,76 @@ body {
     background-color: black;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 60px; /* define a largura da coluna esquerda */
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 3em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    padding: 10
+}
+
+.Sobre {
+    display: grid;
+    grid-template-rows: 100px 5fr 100px;
+    justify-content: center;
+}
+
+.logoWiki {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgLogo {
+    width: 20em;
+}
+
 nav {
-    background-color: #333;
+    background-image: url("./assets/Rainbow_Six_Siege_26-removebg-preview.png");
+    background-size: 15em;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 2em;
+    background-color:white;
     top: 100;
     left: 0;
-    width: 100%;
+    height: 3.5em;
+
 }
 
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    float: right;
 }
 
 nav ul li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1em;
     padding: 10px 20px;
+    line-height: 4em;
 }
 
 nav ul li a:hover {
+    color: white;
     background-color: #555;
 }
 

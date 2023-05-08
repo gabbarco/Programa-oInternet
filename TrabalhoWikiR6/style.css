@@ -173,7 +173,7 @@ body {
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
   }
 
@@ -189,8 +189,52 @@ body {
     text-align: center;
   }
 
+  .gadgets {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 5em;
+  }
+
+  .mapas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 150px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 5em;
+  }
+
+  .mapasinativa {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 5em;
+  }
+  .gadgets .image p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+  }
+
   .galeria h2{
     font-size: 12px;
+  }
+
+  .obsmapas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .image {

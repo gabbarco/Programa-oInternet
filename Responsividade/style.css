@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #000000;
+
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+    text-transform: capitalize;
+}
+
+.big-text{
+	font-size: 175%;
+	font-weight: bold;
+}
+.small-text{
+	font-size: 75%;
+}
+.center{
+	text-align: center;
+}
+
+section{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.in-section{
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+/* Background Color */
+
+header,
+.backgroundpage{
+	width: 100%;
+	background-color: #a6a6a7;
+}
+
+footer{
+	width: 100%;
+	background-color: #d9d9da79;
+}
+
+/* NAVBAR */
+
+nav{
+	display: flex;
+	height: 40px;
+}
+nav .wrapper{
+	display: none;
+	flex-basis: 200px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+nav #brand{
+	font-weight: bold;
+	align-self: center;
+	justify-self: flex-start;
+	padding-left: 5rem;
+	flex-basis: 200px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+nav #tabelas{
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+nav #tabelas .tab{
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+nav #icons{
+	display: flex;
+	align-self: center;
+	justify-self: flex-end;
+	font-weight: bold;
+	padding-right: 5rem;
+	flex-basis: 200px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+nav #icons .icon{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+/* Home Page */
+
+#home{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+#home img{
+	margin-left: 2rem;
+	max-width: 35%;
+}
+#home .small-text{
+	margin-top: 1.5rem;
+	padding-right: 50%;
+}
+#home #home-btn{
+	border: none;
+	margin-top: 1.5rem;
+	padding: 1rem 2rem;
+	background-color: #4A4A4C;
+	color: #FFFFFF;
+}
+
+/* Welcome to our site Page */
+
+#welcomesite{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+#welcomesite #present .small-text{
+	margin-top: 1.5rem;
+}
+#welcomesite #contents{
+	display: grid;
+	justify-content: center;
+	width: 100%;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, 15rem);
+	grid-auto-flow: dense;
+	margin-top: 1.5rem;
+}
+#welcomesite #contents .content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#welcomesite #contents .content p{
+	margin-top: 1rem;
+	font-size: 75%;
+	max-width: 75%;
+}
+#welcomesite #contents img{
+	max-width: 100px;
+}
+
+/* Activities Page */
+
+.arrow{
+	width: 5rem;
+	height: 100%;
+	margin-bottom: 5rem;
+	font-size: 5rem;
+}
+
+#activities{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+#activities #activities-btn{
+	border: none;
+	margin-top: 1.5rem;
+	align-self: center;
+	width: 5rem;
+	height: 2rem;
+	background-color: #4A4A4C;
+	color: #FFFFFF;
+}
+#activities #present{
+	margin-left: 5rem;
+}
+#activities #present .big-text,
+#activities #present .small-text{
+	text-align: start;
+	width: 100%;
+}
+#activities #present .small-text{
+	margin-top: 1.5rem;
+}
+#activities #contents{
+	display: grid;
+	justify-content: center;
+	width: 100%;
+	gap: 1rem;
+	grid-template-columns: repeat(4, 15rem);
+	grid-auto-flow: dense;
+	margin-top: 1.5rem;
+}
+#activities .content-wrapper{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+#activities #contents .content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#activities #contents .content p{
+	margin-top: 1rem;
+	font-size: 75%;
+	max-width: 75%;
+}
+#activities #contents img{
+	max-width: 200px;
+}
+
+/* Community Page */
+
+#community{
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+#community img{
+	margin-right: 2rem;
+	max-width: 35%;
+}
+#community .small-text{
+	margin-top: 1.5rem;
+	padding-left: 30%;
+}
+#community .big-text{
+	padding-left: 30%;
+}
+#community #community-btn{
+	border: none;
+	margin-top: 1.5rem;
+	padding: 1rem 2rem;
+	background-color: #4A4A4C;
+	color: #FFFFFF;
+	margin-left: 30%;
+}
+
+/* DIY Page */
+
+#diy{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#diy #activities-btn{
+	border: none;
+	margin-top: 1.5rem;
+	align-self: center;
+	width: 5rem;
+	height: 2rem;
+	background-color: #4A4A4C;
+	color: #FFFFFF;
+}
+#diy #present{
+	margin-left: 5rem;
+}
+#diy #present .big-text,
+#diy #present .small-text{
+	text-align: start;
+	width: 100%;
+}
+#diy #present .small-text{
+	margin-top: 1.5rem;
+}
+
+#diy #contents{
+	display: grid;
+	justify-content: center;
+	width: 100%;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, 15rem);
+	grid-auto-flow: dense;
+	margin-top: 1.5rem;
+}
+#diy .content-wrapper{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+#diy #contents .content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#diy #contents .content p{
+	margin-top: 1rem;
+	font-size: 75%;
+	max-width: 75%;
+}
+#diy #contents img{
+	max-width: 200px;
+}
+#diy #diy-btn{
+	border: none;
+	margin-top: 1.5rem;
+	padding: 1rem 1rem;
+	width: 10rem;
+	align-self: center;
+	background-color: #4A4A4C;
+	color: #FFFFFF;
+}
+
+
+/* Newsletter Page */
+
+#email{
+	display: flex;
+}
+#email .info .big-text,
+#email .info .small-text{
+	text-align: start;
+	margin-bottom: 1.5rem;
+	width: 100%;
+}
+#email #email-btn{
+	margin-left: 5rem;
+	width: 20rem;
+	height: 2rem;
+	align-self: center;
+}
+
+/* Footer Page */
+
+#bottom{
+	display: flex;
+	align-items: center;
+}
+#bottom #logo{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+#bottom #links{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	display: grid;
+	justify-content: center;
+	width: 100%;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, 15rem);
+	grid-auto-flow: dense;
+}
+#bottom #links .link{
+	display: flex;
+	flex-direction: column;
+}
+#bottom #links .link .info{
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+#bottom #socialmedia .info{
+	text-align: center;
+	margin-bottom: 1rem;
+}
+#bottom #socialmedia .icons{
+	display: flex;
+	justify-content: space-around;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 600px){
+	nav .wrapper{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		justify-self: center;
+		padding-left: 3rem;
+	}
+	nav #brand{
+		font-weight: bold;
+		text-align: center;
+		align-self: center;
+		justify-self: center;
+		padding-left: 0;
+		flex-shrink: 0;
+	}
+	nav #tabelas{
+		display: none;
+	}
+
+	nav .icon {
+		padding-left: 2rem;
+	}
+
+	nav #icon2 {
+		display: none;
+	}
+	nav #icon3 {
+		display: none;
+	}
+
+	#home{
+		flex-direction: column;
+	}
+	#home .new{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#home .new .center-res{
+		text-align: center;
+	}
+	#home .small-text{
+		padding: 0;
+	}
+	#home img{
+		margin-left: 0;
+		margin-top: 1.5rem;
+		max-width: 50%;
+	}
+
+	#activities .content-wrapper #contents{
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+		align-items: left;
+	}
+	
+	#activities .content-wrapper #contents #content2{
+		display: none;
+	}
+
+	#activities .content-wrapper #contents #content3{
+		display: none;
+	}
+
+	#activities .content-wrapper #contents #content4{
+		display: none;
+	}
+
+	#community{
+		flex-direction: column-reverse;
+	}
+	#community .info{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#community .community .center-res{
+		text-align: center;
+	}
+	#community .small-text{
+		padding: 0;
+	}
+	#community .big-text{
+		padding: 0;
+	}
+	#community #community-btn{
+		margin: 0;
+		margin-top: 1.5rem;
+	}
+	#community img{
+		margin-right: 0;
+		margin-top: 1.5rem;
+		max-width: 50%;
+	}
+
+	#email{
+		display: flex;
+		flex-direction: column;
+	}
+	#email #email-btn{
+		margin-left: 0;
+		align-self: center;
+	}
+	#email .info .big-text,
+	#email .info .small-text{
+		text-align: center;
+	}
+
+	#bottom{
+		flex-direction: column;
+	}
+	#bottom #logo{
+		margin-bottom: 1.5rem;
+	}
+	#bottom #links{
+		margin-bottom: 1.5rem;
+	}
+
+}

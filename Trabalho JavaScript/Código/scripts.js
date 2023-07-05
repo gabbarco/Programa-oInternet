@@ -14,21 +14,21 @@ btnComent.addEventListener("click", exibeComentario);
 function like(){
     var image = document.getElementById('clicaLike');
     var valueSrc = image.getAttribute('src');
-    var iconeBranco = 'icones/coracao.png';
-    var iconeVermelho = 'icones/coracao_red.png';
-    if(valueSrc == iconeBranco)
-        image.setAttribute('src', iconeVermelho);
+    var semLike = 'icones/coracao.png';
+    var comLike = 'icones/coracao_red.png';
+    if(valueSrc == semLike)
+        image.setAttribute('src', comLike);
     else
-        image.setAttribute('src', iconeBranco);
+        image.setAttribute('src', semLike);
 }
 
 function postaComentario(){
-    let msg = txt.value;
+    let comentario = txt.value;
     let html = comentarios.innerHTML;
     comentarios.innerHTML = html + `     
                                     <div class="comentario">
                                     <span> Gabriel </span>
-                                    <p> ${msg} </p>
+                                    <p> ${comentario} </p>
                                     </div>
     `;
 
